@@ -1,16 +1,27 @@
-# sgms
+# Smart Garbage Management System
 
-A new Flutter project.
+This is just a project demo i created. This app doesnot validate user creadientials from server side Hence if you are using this in production , make sure you do everything from serverside. If it's just a project demo or assignment you can change the **admin email** and **admin password** from  
+>lib/screens/adminlogin.dart
 
-## Getting Started
+Change these variables to your required credientials .
+> String adminemail = "admin@admin.com";
+  String adminpassword = "admin@123";
 
-This project is a starting point for a Flutter application.
+  As You can see, those are the default admin details.Make sure to create a database and then create a **collections name** as 
+  > pickups
+  
+  and then place a **google-services.json** file from firebase to 
 
-A few resources to get you started if this is your first Flutter project:
+  > android/app/google-services.json
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Setup
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+go to directery you want to copy and paste these commands in terminal
+
+``git clone https://github.com/samirlure161/smartgarbagemanagementsystem.git sgms``
+
+`cd sgms`
+
+`flutter pub get`
+
+`flutter run`

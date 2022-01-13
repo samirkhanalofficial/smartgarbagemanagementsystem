@@ -9,6 +9,12 @@ class AdminLogin extends StatefulWidget {
 
 class _AdminLoginState extends State<AdminLogin> {
   String email = "", password = "";
+  // change these admin email and password . using these as it is is insecure.
+  // makesure to create an api and check admin credientials from there
+  // thus you can remove these and create https request to check validation.
+  // since this is just a project demo , i am not doing so.
+  String adminemail = "admin@admin.com";
+  String adminpassword = "admin@123";
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -163,8 +169,7 @@ class _AdminLoginState extends State<AdminLogin> {
                   padding: const EdgeInsets.all(8.0),
                   child: FloatingActionButton(
                     onPressed: () {
-                      if (email == "admin@admin.com" &&
-                          password == "12345678") {
+                      if (email == adminemail && password == adminpassword) {
                         Navigator.of(context).pushNamed("/admin/dashboard");
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
