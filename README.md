@@ -7,10 +7,10 @@ Change these variables to your required credientials .
 > String adminemail = "admin@admin.com";
   String adminpassword = "admin@123";
 
-  As You can see, those are the default admin details.Make sure to create a database and then create a **collections name** as 
+  As You can see, those are the default admin details.Make sure to create a database and then create a **collections name** as
   > pickups
   
-  and then place a **google-services.json** file from firebase to 
+  and then place a **google-services.json** file from firebase to
 
   > android/app/google-services.json
 
